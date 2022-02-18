@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="generalStyling.css">
+</head>
+<body>
+<div id="mainPanel">
+    <form action="/signup" method="post">
+
+        <p>Username</p>
+        <input class="inputField" name="username" id="username" placeholder="Enter a username..."
+               oninput="verifyForm()">
+        <br>
+        <p>Email address</p>
+        <input class="inputField" name="emailAddress" id="emailAddress" placeholder="Enter your email address..."
+               oninput="verifyForm()">
+        <br>
+        <p>Password</p>
+        <input class="inputField" name="password" id="password" placeholder="Enter your password..."
+               oninput="verifyForm()">
+        <br>
+        <p>Confirm Password</p>
+        <input class="inputField" name="confirmPassword" id="confirmPassword"
+               placeholder="Enter your password again..."
+               oninput="verifyForm()">
+        <br>
+        <br>
+        <button type="submit" id="submitButton" disabled>Sign up</button>
+    </form>
+</div>
+<script src="helperMethods.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my website</title>
+    <link rel="stylesheet" href="generalStyling.css">
+</head>
+<body>
+<div id="mainPanel">
+    <h1>Website Login</h1>
+    <form action="/signup" method="post">
+        <input class="inputField" name="fullname" id="fullName" placeholder="Enter your full name..."
+               oninput="fullNameCheck(this)">
+        <br>
+        <br>
+        <button type="submit" id="submitButton" disabled>Start</button>
+    </form>
+</div>
+<script src="helperMethods.js"></script>
+</body>
+</html>
